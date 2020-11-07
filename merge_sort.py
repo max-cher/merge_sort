@@ -86,23 +86,25 @@ B = []
 for i in A:
         B.append(i)
 
+def main():
+        #Merge([2,4,5,6,1,2,3,6], 1, 4, 8)
 
-#Merge([2,4,5,6,1,2,3,6], 1, 4, 8)
+        print('\nИсходный:')
+        print('A: ' + str(A))
 
-print('\nИсходный:')
-print('A: ' + str(A))
+        Sort(A,1,len(A))
+        print('\nМой:')
+        print('A: ' + str(A))
 
-Sort(A,1,len(A))
-print('\nМой:')
-print('A: ' + str(A))
+        A.sort()
+        print('\nМой сортированный:')
+        print('A: ' + str(A))
 
-A.sort()
-print('\nМой сортированный:')
-print('A: ' + str(A))
-
-B.sort()
-print('\nСортированный:')
-print('A: ' + str(B))
+        B.sort()
+        print('\nСортированный:')
+        print('A: ' + str(B))
 
 
+if __name__ == "__main__":
+        main()
 
